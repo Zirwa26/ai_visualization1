@@ -84,9 +84,7 @@ ax1.set_title('Distribution of Account Types', fontsize=title_font_size)  # Adju
 # Display the pie chart
 st.pyplot(fig1)
 
-st.markdown("<p style='font-size: 21px;'>This pie chart visualizes the proportion of different account types in the dataset.
-By understanding the share of each account type, you can identify which account types are most popular or prevalent in the data. 
-For example, a dominance of one type may indicate customer preferences or organizational focus.</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size: 21px;'>This pie chart visualizes the proportion of different account types in the dataset.By understanding the share of each account type, you can identify which account types are most popular or prevalent in the data. For example, a dominance of one type may indicate customer preferences or organizational focus.</p>", unsafe_allow_html=True)
 # Task 2: Transaction Flow by Beneficiary Bank
 st.markdown("<h2 style='font-size: 40px;'>Task 2: Top 5 Beneficiary Banks with Highest Credit Transactions by Region</h2>", unsafe_allow_html=True)
 
@@ -99,9 +97,7 @@ ax2.set_title('Top 5 Beneficiary Banks with Highest Credit Transactions by Regio
 ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, fontsize=label_font_size)
 
 st.pyplot(fig2)
-st.write("<p style='font-size: 21px;'>Purpose: Displays the top 5 beneficiary banks in terms of credit transactions for each region.
-This chart helps identify key banks that handle the most credit transactions in different regions. 
-It can uncover regional banking trends or potential hubs of financial activity, which might be useful for decision-making in targeted banking strategies.</p>", unsafe_allow_html=True)
+st.write("<p style='font-size: 21px;'>Purpose: Displays the top 5 beneficiary banks in terms of credit transactions for each region.This chart helps identify key banks that handle the most credit transactions in different regions. It can uncover regional banking trends or potential hubs of financial activity, which might be useful for decision-making in targeted banking strategies.</p>", unsafe_allow_html=True)
 
 # Task 3: Geographic Heatmap of Transactions
 st.markdown("<h2 style='font-size: 40px;'>Task 3: Transaction Intensity by Region</h2>", unsafe_allow_html=True)
