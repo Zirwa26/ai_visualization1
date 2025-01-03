@@ -76,6 +76,8 @@ colors = {
 # Task 1: Account Type Distribution
 st.markdown("<h2 style='font-size: 40px;'>Task 1: Distribution of Account Types</h2>", unsafe_allow_html=True)
 account_type_counts = data['Account Type'].value_counts()
+width = 10
+height = 6
 fig1, ax1 = plt.subplots(figsize=(width, height))  # Smaller plot size
 ax1.pie(account_type_counts, labels=account_type_counts.index, autopct=lambda p: f'{p:.1f}%', startangle=150,
          colors=[colors['dark_blue'], colors['slate_blue'], colors['light_beige'], colors['dark_slate']],
