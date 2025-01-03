@@ -79,10 +79,17 @@ account_type_counts = data['Account Type'].value_counts()
 width = 10
 height = 6
 fig1, ax1 = plt.subplots(figsize=(width, height))  # Smaller plot size
+# Define font sizes
+label_font_size = 12  # Set your desired label font size
+title_font_size = 16  # Set your desired title font size
+
+# Now you can use them in your plot
+fig1, ax1 = plt.subplots(figsize=(width, height))  # Smaller plot size
 ax1.pie(account_type_counts, labels=account_type_counts.index, autopct=lambda p: f'{p:.1f}%', startangle=150,
          colors=[colors['dark_blue'], colors['slate_blue'], colors['light_beige'], colors['dark_slate']],
          textprops={'fontsize': label_font_size})  # Adjust label font size here
 ax1.set_title('Distribution of Account Types', fontsize=title_font_size)  # Adjust title font size
+
 
 # Display the pie chart
 st.pyplot(fig1)
