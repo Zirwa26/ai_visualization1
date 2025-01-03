@@ -137,7 +137,21 @@ ax4.scatter(outliers_credit.index, outliers_credit['Credit'], color='red', label
 ax4.set_title('Anomalies in Credit Transactions', fontsize=title_font_size)
 ax4.set_xlabel('Index', fontsize=label_font_size)
 ax4.set_ylabel('Credit Amount', fontsize=label_font_size)
-ax4.legend(fontsize=legend_font_size)
+# Define font sizes
+label_font_size = 12  # Set your desired label font size
+title_font_size = 16  # Set your desired title font size
+legend_font_size = 14  # Set your desired legend font size
+
+# Now you can use them in your plot
+fig4, ax4 = plt.subplots(figsize=(width, height))  # Smaller plot size
+ax4.scatter(data.index, data['Credit'], label='Credit', alpha=0.5, color=colors['dark_blue'])
+ax4.scatter(outliers_credit.index, outliers_credit['Credit'], color='red', label='Outliers (Credit)', alpha=0.7)
+ax4.set_title('Anomalies in Credit Transactions', fontsize=title_font_size)
+ax4.set_xlabel('Index', fontsize=label_font_size)
+ax4.set_ylabel('Credit Amount', fontsize=label_font_size)
+ax4.legend(fontsize=legend_font_size)  # Use the defined legend font size
+
+
 
 st.pyplot(fig4)
 st.write("<p style='font-size: 21px;'>Purpose: Identifies outliers in the credit and debit transactions based on Z-scores. Outliers often represent unusual behavior or potential errors. By isolating these, you can investigate fraud, transaction errors, or extraordinary activities, enhancing data integrity and risk management.</p>", unsafe_allow_html=True)
