@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load data
-data = pd.read_excel("workdata/Enhanced_Dummy_HBL_Data.xlsx ")
+data = pd.read_excel("workdata/Enhanced_Dummy_HBL_Data.xlsx", engine='openpyxl')
+
 
 # Set Streamlit page configuration
 st.set_page_config(page_title="HBL Data Analysis", layout="wide")
