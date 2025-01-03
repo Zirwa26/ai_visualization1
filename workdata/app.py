@@ -146,8 +146,7 @@ ax5.set_ylabel('Transaction Amount', fontsize=label_font_size)
 ax5.legend(title='Transaction Type', fontsize=legend_font_size)
 
 st.pyplot(fig5)
-st.write("<p style='font-size: 21px;'>
-Purpose: Compares the distribution of credit and debit transaction amounts across different account types. Box plots show the central tendency (median) and spread (interquartile range) of transactions for each account type. It helps pinpoint which account types have higher variability or larger transactions, aiding in customer segmentation and strategy.</p>", unsafe_allow_html=True)
+st.write("<p style='font-size: 21px;'>Purpose: Compares the distribution of credit and debit transaction amounts across different account types. Box plots show the central tendency (median) and spread (interquartile range) of transactions for each account type. It helps pinpoint which account types have higher variability or larger transactions, aiding in customer segmentation and strategy.</p>", unsafe_allow_html=True)
 
 # Task 6: Transaction Trends Over Time
 st.markdown("<h2 style='font-size: 40px;'>Task 6: Time-Based Analysis (if applicable)</h2>", unsafe_allow_html=True)
