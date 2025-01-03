@@ -67,10 +67,12 @@ st.write(f"Dataset size: {data.size}")
 # Define custom colors
 colors = {
   
-    'dark_blue': '#1E3A8A',  # Dark Blue (replace with a more vibrant shade)
-    'slate_blue': '#4F46E5',  # Slate Blue (slightly brighter)
-    'light_beige': '#F5F3F5',  # Light Beige (softer shade)
-    'dark_slate': '#2D3748'   # Dark Slate (more neutral tone)
+
+    'light_blue': '#A3D8F4',  # Light Blue
+    'soft_purple': '#B8A9C9',  # Soft Purple
+    'pale_yellow': '#FFF8C6',  # Pale Yellow
+    'light_green': '#D1E8D0'   # Light Green
+
 
 
 }
